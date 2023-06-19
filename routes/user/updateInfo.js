@@ -1,5 +1,4 @@
 const express = require("express");
-const USERS = require("@models/user/UserSchema");
 const userVerification = require("@middlewares/userVerification");
 const app = express();
 const { itemsRequired, itemNotValid, serverError } = require("@errors/general");

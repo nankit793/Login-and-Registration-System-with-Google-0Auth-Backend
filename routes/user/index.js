@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
 
-app.use("/auth/google/siginOn", require("./auth/google"));
-app.use("/auth/registration", require("./auth/registration"));
-app.use("/auth/login", require("./auth/login"));
-app.use("/auth/verifyAccount", require("./auth/verifyAccount"));
-app.use("/auth/forgotPassword", require("./auth/forgotPassword"));
-app.use("/auth/regenrateVerifyOTP", require("./auth/regenrateVerifyOTP"));
-app.use("/auth/regenrateFPotp", require("./auth/regenrateFPotp"));
+app.use("/auth/google/siginOn", require("./creds/google"));
+app.use("/auth/registration", require("./creds/registration"));
+app.use("/auth/login", require("./creds/login"));
+app.use("/auth/verifyAccount", require("./creds/verifyAccount"));
+app.use("/auth/forgotPassword", require("./creds/forgotPassword"));
+app.use("/auth/regenrateVerifyOTP", require("./creds/regenrateVerifyOTP"));
+app.use("/auth/regenrateFPotp", require("./creds/regenrateFPotp"));
 
 module.exports = app;

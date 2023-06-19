@@ -73,6 +73,7 @@ app.use("*", cors({ credentials: true, origin: "http://localhost:3000" }));
 app.use(express.json());
 
 app.use("/user", require("./routes/user/index"));
+app.use("/auth", require("./routes/Authencation"));
 app.use("/", require("./routes/index"));
 
 // routes to handle
