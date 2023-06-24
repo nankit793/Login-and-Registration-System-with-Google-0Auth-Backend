@@ -8,5 +8,6 @@ app.use("/auth/verifyAccount", require("./creds/verifyAccount"));
 app.use("/auth/forgotPassword", require("./creds/forgotPassword"));
 app.use("/auth/regenrateVerifyOTP", require("./creds/regenrateVerifyOTP"));
 app.use("/auth/regenrateFPotp", require("./creds/regenrateFPotp"));
+app.use("/savekundli", require("./saveKundliData"));
 
 module.exports = app;

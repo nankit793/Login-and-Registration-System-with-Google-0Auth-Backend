@@ -29,6 +29,7 @@ const userSchema = new mongoose.Schema({
       },
     ],
   },
+  blocked: { type: Boolean, default: false, select: false },
   password: { type: String, select: false },
   name: String,
   accountVerfication: { type: Boolean, default: false },

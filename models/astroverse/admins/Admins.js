@@ -6,4 +6,4 @@ const AdminSchema = new mongoose.Schema({
   name: String,
 });
 
-module.exports = mongoose.model("user", AdminSchema);
+module.exports = mongoose.model("admins", AdminSchema);

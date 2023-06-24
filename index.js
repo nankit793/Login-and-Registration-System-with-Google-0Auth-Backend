@@ -74,7 +74,7 @@ app.use(express.json());
 
 app.use("/user", require("./routes/user/index"));
 app.use("/auth", require("./routes/Authencation"));
-app.use("/", require("./routes/index"));
+app.use("/", require("./routes/routerIndex"));
 
 // routes to handle
 app.use("*", (req, res) => {
