@@ -7,7 +7,7 @@ const {
   userNotExist,
 } = require("@errors/general");
 const { attachCokiesToRes } = require("@controllers/general");
-const Admin = require("@models/astroverse/admins/Admins");
+const Admin = require("@models/app/admins/Admins");
 const {
   emailVerification,
   passwordVerification,

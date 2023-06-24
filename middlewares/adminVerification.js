@@ -1,6 +1,6 @@
 const { attachCokiesToRes } = require("@controllers/general");
 const { verifyRefreshTokens } = require("@controllers/verifyTokens");
-const USERS = require("@models/astroverse/admins/Admins");
+const USERS = require("@models/app/admins/Admins");
 const {
   itemRequired,
   itemNotValid,

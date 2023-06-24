@@ -1,10 +1,8 @@
-var btoa = require("btoa");
+// var btoa = require("btoa");
 const fetch = require("cross-fetch");
 
 const useFetcher = async (url, bodyData = {}) => {
   // var myHeaders = new Headers();
-  const basicAuth =
-    "Basic " + btoa(`${process.env.USER_ID}:${process.env.ACCESS_ID}`);
 
   // myHeaders.append("Authorization", basicAuth);
   // myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
@@ -15,14 +13,14 @@ const useFetcher = async (url, bodyData = {}) => {
   var requestOptions = {
     method: "POST",
     headers: {
-      Authorization: basicAuth,
-      "Content-Type": "application/x-www-form-urlencoded",
+      // set content type
+      // "Content-Type": "application/x-www-form-urlencoded",
     },
     body: urlencoded,
     redirect: "follow",
   };
 
-  const res = fetch(`https://json.astrologyapi.com/v1${url}`, requestOptions)
+  const res = fetch(`your external URL`, requestOptions)
     .then(async (response) => {
       const res = await response.json();
       return {

@@ -10,7 +10,7 @@ const {
   emailVerification,
   passwordVerification,
 } = require("@controllers/verifiers");
-const Admin = require("@models/astroverse/admins/Admins");
+const Admin = require("@models/app/admins/Admins");
 const { generateHash } = require("@controllers/bcrypt");
 
 app.post("/", async (req, res) => {
